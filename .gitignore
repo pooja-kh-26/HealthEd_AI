@@ -1,0 +1,65 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# CSVs or Datasets 
+*.csv
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+
+# Environment Variables
+.env
+
+# Build directories
+dist/
+build/
+
+# Frontend build (Vite)
+frontend/dist
+
+# VSCode settings (optional)
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python Virtual Environment
+.venv/
