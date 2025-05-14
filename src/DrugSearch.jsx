@@ -42,26 +42,31 @@ export default function DrugSearch() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 p-8 justify-between">
-      {/* Search bar at the top */}
-      <div className="bg-white p-6 rounded-lg shadow mb-6">
-        <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-4">
-          <div className="flex-1">
-            <input
-              type="text"
-              value={drugName}
-              onChange={(e) => setDrugName(e.target.value)}
-              placeholder="Enter medication name..."
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-          <button
-            type="submit"
-            disabled={isLoading || !drugName.trim()}
-            className="px-6 py-3 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 transition-colors"
-          >
-            {isLoading ? 'Searching...' : 'Search'}
-          </button>
-        </form>
+      <div className="mb-8 text-center">
+        <h1 className="text-3xl font-bold text-gray-800">HealthEd AI Drug Info Finder</h1>
+        <p className="text-gray-600 mt-2">Search and understand medication uses and side effects in simple terms</p>
+
+        {/* Search bar moved here */}
+        <div className="bg-white p-6 rounded-lg shadow mt-6">
+          <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-4">
+            <div className="flex-1">
+              <input
+                type="text"
+                value={drugName}
+                onChange={(e) => setDrugName(e.target.value)}
+                placeholder="Enter medication name..."
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <button
+              type="submit"
+              disabled={isLoading || !drugName.trim()}
+              className="px-6 py-3 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 transition-colors"
+            >
+              {isLoading ? 'Searching...' : 'Search'}
+            </button>
+          </form>
+        </div>
       </div>
 
       {/* Error message */}

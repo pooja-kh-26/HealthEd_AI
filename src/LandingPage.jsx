@@ -14,14 +14,14 @@ export default function LandingPage() {
             <span className="block text-blue-600">Powered by AI</span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-xl text-gray-600">
-            Transform complex medical information into easy-to-understand language and get answers to your health questions instantly.
+          Ask any medical-related question, including medicine side effects and usage, and receive easy-to-understand answers instantly.
           </p>
           <div className="mt-10 flex gap-4 justify-center">
             <button
-              onClick={() => navigate('/simplify')} 
+              onClick={() => navigate('/chatbot')} 
               className="px-8 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
             >
-              Simplify Medical Text
+              QnA
             </button>
             <button
               onClick={() => navigate('/drug-search')} 
@@ -51,13 +51,13 @@ export default function LandingPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Medical Text Simplification</h3>
+              <h3 className="text-xl font-medium text-gray-900 mb-2">Medical Related QnA</h3>
               <p className="text-gray-600">
-                Transform complex medical documents, discharge papers, or research into plain, easy-to-understand language. Our AI breaks down complicated terminology and explains concepts in simple terms.
+              Ask any medicine-related questions and get clear, simple answers. Our AI can provide information on medication uses, side effects, dosages, and more, all in easy-to-understand terms.
               </p>
               <div className="mt-4">
                 <button
-                  onClick={() => navigate('/simplify')}
+                  onClick={() => navigate('/chatbot')}
                   className="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center"
                 >
                   Try it now
@@ -114,7 +114,7 @@ export default function LandingPage() {
               <div className="mt-4">
                 <h3 className="text-xl font-medium text-gray-900 mb-2">Input Your Text</h3>
                 <p className="text-gray-600">
-                  Copy and paste complex medical information or search for a medication name.
+                  Ask medical information or search for a medication name.
                 </p>
               </div>
             </div>
@@ -143,65 +143,6 @@ export default function LandingPage() {
                   Receive easy-to-understand explanations and information in plain language.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Testimonials Section */}
-      <div className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Trusted by Patients and Healthcare Providers</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            {/* Testimonial 1 */}
-            <div className="bg-blue-50 p-6 rounded-lg shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-xl font-bold text-blue-600">S</span>
-                </div>
-                <div className="ml-4">
-                  <h4 className="font-medium text-gray-900">Sarah M.</h4>
-                  <p className="text-sm text-gray-500">Patient</p>
-                </div>
-              </div>
-              <p className="text-gray-600">
-                "HealthEd AI helped me understand my discharge papers after surgery. What was once confusing medical jargon became clear instructions I could follow easily."
-              </p>
-            </div>
-            
-            {/* Testimonial 2 */}
-            <div className="bg-blue-50 p-6 rounded-lg shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-xl font-bold text-blue-600">D</span>
-                </div>
-                <div className="ml-4">
-                  <h4 className="font-medium text-gray-900">Dr. James K.</h4>
-                  <p className="text-sm text-gray-500">Family Physician</p>
-                </div>
-              </div>
-              <p className="text-gray-600">
-                "I recommend HealthEd AI to my patients to help them better understand their conditions and treatment plans. It bridges the communication gap in healthcare."
-              </p>
-            </div>
-            
-            {/* Testimonial 3 */}
-            <div className="bg-blue-50 p-6 rounded-lg shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-xl font-bold text-blue-600">R</span>
-                </div>
-                <div className="ml-4">
-                  <h4 className="font-medium text-gray-900">Robert T.</h4>
-                  <p className="text-sm text-gray-500">Caregiver</p>
-                </div>
-              </div>
-              <p className="text-gray-600">
-                "Managing medications for my elderly father became much easier with the drug information tool. Now I can quickly check for side effects and interactions."
-              </p>
             </div>
           </div>
         </div>
