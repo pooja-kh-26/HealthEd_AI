@@ -18,7 +18,7 @@ export default function DrugSearch() {
     setError(null);
     
     try {
-      const response = await fetch(`http://localhost:5000/drug/${drugName}`, {
+      const response = await fetch(`https://healthcare-ml.onrender.com/${drugName}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
