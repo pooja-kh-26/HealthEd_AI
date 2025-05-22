@@ -48,7 +48,7 @@ function Navbar() {
             Home
           </Link>
           <Link to="/chatbot" className="text-gray-500 hover:bg-blue-50 hover:text-blue-700 block pl-3 pr-4 py-2 text-base font-medium">
-            Simplify Text
+            QnA
           </Link>
           <Link to="/drug-search" className="text-gray-500 hover:bg-blue-50 hover:text-blue-700 block pl-3 pr-4 py-2 text-base font-medium">
             Medication Info
