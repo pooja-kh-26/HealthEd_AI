@@ -1,4 +1,4 @@
-# HealthEd AI 2 🏥🤖
+# HealthEd AI  🏥🤖
 
 An AI-powered healthcare application that transforms complex medical terminology into easy-to-understand language, bridging the gap between medical professionals and patients through advanced Natural Language Processing. [Link](https://health-made-simple-powered-by-ai.netlify.app/)
 
